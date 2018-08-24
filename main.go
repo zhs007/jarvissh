@@ -27,9 +27,8 @@ func main() {
 	}
 
 	cfg := jarviscore.Config{
-		RunPath:      rundir,
-		PeerAddrFile: "peeraddr.yaml",
-		DefPeerAddr:  mycfg.RootServAddr,
+		RunPath:     rundir,
+		DefPeerAddr: mycfg.RootServAddr,
 	}
 
 	myinfo := jarviscore.BaseInfo{

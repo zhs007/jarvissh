@@ -29,12 +29,12 @@ func loadConfig(filename string) (*config, error) {
 		return nil, err1
 	}
 
-	cfg := &config{}
+	cfg := config{}
 
 	err2 := yaml.Unmarshal(fd, &cfg)
 	if err2 != nil {
 		return nil, err2
 	}
 
-	return cfg, nil
+	return &cfg, nil
 }
