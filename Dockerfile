@@ -5,7 +5,7 @@ MAINTAINER zerro "zerrozhao@gmail.com"
 
 WORKDIR $GOPATH/src/github.com/zhs007/jarvissh
 
-COPY ./Gopkg.* $GOPATH/src/github.com/zhs007/jarvissh
+COPY ./Gopkg.* $GOPATH/src/github.com/zhs007/jarvissh/
 
 RUN go get -u github.com/golang/dep/cmd/dep \
     && dep ensure -vendor-only
