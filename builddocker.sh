@@ -1,4 +1,6 @@
 docker build -t jarvissh .
 
-mkdir runpath
-cp config.yaml ./runpath/
+if [ ! -d ".runpath" ]; then
+    mkdir runpath
+    cp config.yaml ./runpath/
+fi
