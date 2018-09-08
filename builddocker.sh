@@ -1,4 +1,4 @@
 docker build -t jarvissh .
 
-mkdir data
-cp config.yaml ./data/
+mkdir runpath
+cp config.yaml ./runpath/
