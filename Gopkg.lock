@@ -34,7 +34,7 @@
     "log",
     "proto"
   ]
-  revision = "741904d3bfb9da0d456f1d757c9bb6540c63200e"
+  revision = "6443c1ff5426aaccf6faf60cca5c57677a69337c"
 
 [[projects]]
   name = "go.uber.org/atomic"
