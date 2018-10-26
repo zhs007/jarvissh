@@ -15,3 +15,7 @@
 jarvissh
 peeraddr.yaml
 vendor
+.vscode
+dat
+logs
+config.yaml

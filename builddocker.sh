@@ -1,6 +1,9 @@
 docker build -t jarvissh .
 
-if [ ! -d "runpath" ]; then
-    mkdir runpath
-    cp config.yaml ./runpath/
+if [ ! -d "logs" ]; then
+    mkdir logs
+fi
+
+if [ ! -d "dat" ]; then
+    mkdir dat
 fi
