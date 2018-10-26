@@ -1,9 +1,8 @@
 package main
 
 import (
-	"flag"
+	"context"
 	"fmt"
-	"path"
 
 	"github.com/zhs007/jarviscore"
 	pb "github.com/zhs007/jarviscore/proto"
@@ -12,14 +11,7 @@ import (
 func main() {
 	fmt.Print("jarvis shell start...")
 
-	var rundir string
-
-	flag.StringVar(&rundir, "run", "./", "run path")
-	flag.Parse()
-
-	fmt.Print("jarvis shell runpath is " + rundir)
-
-	mycfg, err := loadConfig(path.Join(rundir, "./config.yaml"))
+	mycfg, err := loadConfig("cfg/config.yaml")
 	if err != nil {
 		fmt.Print("load config.yaml fail!")
 
@@ -27,8 +19,13 @@ func main() {
 	}
 
 	cfg := jarviscore.Config{
-		RunPath:     rundir,
-		DefPeerAddr: mycfg.RootServAddr,
+		DBPath:         mycfg.DBPath,
+		LogPath:        mycfg.LogPath,
+		DefPeerAddr:    mycfg.RootServAddr,
+		AnkaDBHttpServ: mycfg.AnkaDB.HTTPServ,
+		AnkaDBEngine:   mycfg.AnkaDB.Engine,
+		LogConsole:     mycfg.LogConsole,
+		LogLevel:       mycfg.LogLevel,
 	}
 
 	myinfo := jarviscore.BaseInfo{
@@ -44,7 +41,7 @@ func main() {
 	node := jarviscore.NewNode(myinfo)
 	// defer node.Stop()
 
-	node.Start()
+	node.Start(context.Background())
 
 	fmt.Print("jarvis shell end.")
 }

@@ -1,0 +1,11 @@
+bindaddr: ':7788'
+servaddr: '127.0.0.1:7788'
+rootservaddr: 'jarvis.heyalgo.io:7788'
+nodename: 'node001'
+dbpath: './dat'
+logpath: './logs'
+loglevel: 'debug'
+logconsole: true
+ankadb:
+  httpserv: ':8880'
+  engine: 'leveldb'

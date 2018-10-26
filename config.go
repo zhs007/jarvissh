@@ -13,7 +13,15 @@ type config struct {
 	ServAddr     string
 	RootServAddr string
 	NodeName     string
-	runpath      string
+	DBPath       string
+	LogPath      string
+	LogConsole   bool
+	LogLevel     string
+
+	AnkaDB struct {
+		HTTPServ string
+		Engine   string
+	}
 }
 
 // loadConfig - load config

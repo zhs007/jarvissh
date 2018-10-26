@@ -24,11 +24,14 @@
 #   go-tests = true
 #   unused-packages = true
 
-
 [[constraint]]
-  branch = "master"
-  name = "github.com/zhs007/jarviscore"
+  name = "gopkg.in/yaml.v2"
+  version = "2.2.1"
 
 [prune]
   go-tests = true
   unused-packages = true
+
+[[constraint]]
+  name = "github.com/zhs007/jarviscore"
+  version = "0.2.0"
