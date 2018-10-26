@@ -1,4 +1,6 @@
 # jarvissh
+[![Build Status](https://travis-ci.org/zhs007/jarvissh.svg?branch=master)](https://travis-ci.org/zhs007/jarvissh)
+
 jarvis shell node
 
 ```
