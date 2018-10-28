@@ -17,6 +17,7 @@ RUN CGO_ENABLED=0 GOOS=linux go build -a -installsuffix cgo -o jarvissh . \
     && mkdir /home/jarvissh/dat \
     && mkdir /home/jarvissh/logs \
     && mkdir /home/jarvissh/cfg \
+    && cp -r www /home/jarvissh/www \
     && cp jarvissh /home/jarvissh \
     && cp cfg/config.yaml.default /home/jarvissh/cfg/config.yaml
 
