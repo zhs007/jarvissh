@@ -76,8 +76,8 @@
     "graphqlext",
     "proto"
   ]
-  revision = "2aba4684dc064c24d33b4cc0f7dd2316459f0a22"
-  version = "v0.2.1"
+  revision = "6a348878a57f9c437fc4e72d5e06652a8d642549"
+  version = "v0.2.3"
 
 [[projects]]
   name = "github.com/zhs007/jarviscore"
@@ -89,8 +89,8 @@
     "crypto",
     "proto"
   ]
-  revision = "6eda920fede7006a7ba9781046875de7d52c1ec4"
-  version = "v0.2.0"
+  revision = "0a535e1e517471ceb01a547b1a1f8c9d52b7ec96"
+  version = "v0.2.3"
 
 [[projects]]
   name = "go.uber.org/atomic"
@@ -141,7 +141,7 @@
   branch = "master"
   name = "golang.org/x/sys"
   packages = ["unix"]
-  revision = "731415f00dce967a133e841b3079eda31c996761"
+  revision = "95b1ffbd15a57cc5abb3f04402b9e8ec0016a52c"
 
 [[projects]]
   name = "golang.org/x/text"
@@ -168,7 +168,7 @@
   branch = "master"
   name = "google.golang.org/genproto"
   packages = ["googleapis/rpc/status"]
-  revision = "94acd270e44e65579b9ee3cdab25034d33fed608"
+  revision = "8b5d7a19e2d98fbad9aaf9c599776bf066d7c70f"
 
 [[projects]]
   name = "google.golang.org/grpc"
@@ -212,6 +212,6 @@
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "8dcbae3f5358773a386f45398f1e3efae9936db83a497a6dc17af741f2e65439"
+  inputs-digest = "2511c2b245bf0568517dcf2f9b48e3d1536b61a4bd30bf7ca8d1deb4bd352ce4"
   solver-name = "gps-cdcl"
   solver-version = 1
