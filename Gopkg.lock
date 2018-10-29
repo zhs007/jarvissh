@@ -76,8 +76,8 @@
     "graphqlext",
     "proto"
   ]
-  revision = "6a348878a57f9c437fc4e72d5e06652a8d642549"
-  version = "v0.2.3"
+  revision = "3f896050297309fd12edc7e56b2f52d7ddafae4d"
+  version = "v0.2.4"
 
 [[projects]]
   name = "github.com/zhs007/jarviscore"
@@ -89,8 +89,8 @@
     "crypto",
     "proto"
   ]
-  revision = "0a535e1e517471ceb01a547b1a1f8c9d52b7ec96"
-  version = "v0.2.3"
+  revision = "905b9f9e889967bcbfa3ba88b7be1c3e011d5d3e"
+  version = "v0.2.4"
 
 [[projects]]
   name = "go.uber.org/atomic"
@@ -121,7 +121,7 @@
   branch = "master"
   name = "golang.org/x/crypto"
   packages = ["ripemd160"]
-  revision = "e84da0312774c21d64ee2317962ef669b27ffb41"
+  revision = "dab2b1051b5dd33a57e97c4774ed152e6a6c9a13"
 
 [[projects]]
   branch = "master"
@@ -135,7 +135,7 @@
     "internal/timeseries",
     "trace"
   ]
-  revision = "9b4f9f5ad5197c79fd623a3638e70d8b26cef344"
+  revision = "c44066c5c816ec500d459a2a324a753f78531ae0"
 
 [[projects]]
   branch = "master"
@@ -212,6 +212,6 @@
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "2511c2b245bf0568517dcf2f9b48e3d1536b61a4bd30bf7ca8d1deb4bd352ce4"
+  inputs-digest = "3367adc48004ea95c9c5697baf212f3aa307643d8d40a105275eeb43e8a58d32"
   solver-name = "gps-cdcl"
   solver-version = 1
