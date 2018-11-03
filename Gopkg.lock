@@ -66,7 +66,7 @@
     "leveldb/table",
     "leveldb/util"
   ]
-  revision = "6b91fda63f2e36186f1c9d0e48578defb69c5d43"
+  revision = "a4119e27a65dc634683dd798846ce8ee09620ae9"
 
 [[projects]]
   name = "github.com/zhs007/ankadb"
@@ -76,8 +76,8 @@
     "graphqlext",
     "proto"
   ]
-  revision = "3f896050297309fd12edc7e56b2f52d7ddafae4d"
-  version = "v0.2.4"
+  revision = "9f4701bfbcb2c95ce5b2bde4887fcec07290e4f3"
+  version = "v0.2.5"
 
 [[projects]]
   name = "github.com/zhs007/jarviscore"
@@ -89,8 +89,8 @@
     "crypto",
     "proto"
   ]
-  revision = "bcb5df3d3863b090d810fd791ce31e468cb5d235"
-  version = "v0.2.5"
+  revision = "05a7bb6b85a006ef4ec000f235c35785f4d1271b"
+  version = "v0.2.6"
 
 [[projects]]
   name = "go.uber.org/atomic"
@@ -135,7 +135,7 @@
     "internal/timeseries",
     "trace"
   ]
-  revision = "e11730110bbd884bbf19550bfafe9d69519ce29e"
+  revision = "c10e9556a7bc0e7c942242b606f0acf024ad5d6a"
 
 [[projects]]
   branch = "master"
@@ -212,6 +212,6 @@
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "9245ecfa6ffb99c00ea722dad9d879ea9b1f933e0440160a3599cf6047ed668c"
+  inputs-digest = "d2d70356055998787e004dd3ee4875f729e0e84d750b5a22fe20a521f0574509"
   solver-name = "gps-cdcl"
   solver-version = 1
