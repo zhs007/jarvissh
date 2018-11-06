@@ -11,34 +11,34 @@ import (
 func main() {
 	fmt.Print("jarvis shell start...")
 
-	mycfg, err := loadConfig("cfg/config.yaml")
+	cfg, err := jarviscore.LoadConfig("cfg/config.yaml")
 	if err != nil {
 		fmt.Print("load config.yaml fail!")
 
 		return
 	}
 
-	cfg := jarviscore.Config{
-		DBPath:         mycfg.DBPath,
-		LogPath:        mycfg.LogPath,
-		DefPeerAddr:    mycfg.RootServAddr,
-		AnkaDBHttpServ: mycfg.AnkaDB.HTTPServ,
-		AnkaDBEngine:   mycfg.AnkaDB.Engine,
-		LogConsole:     mycfg.LogConsole,
-		LogLevel:       mycfg.LogLevel,
-	}
+	// cfg := jarviscore.Config{
+	// 	DBPath:         mycfg.DBPath,
+	// 	LogPath:        mycfg.LogPath,
+	// 	DefPeerAddr:    mycfg.RootServAddr,
+	// 	AnkaDBHttpServ: mycfg.AnkaDB.HTTPServ,
+	// 	AnkaDBEngine:   mycfg.AnkaDB.Engine,
+	// 	LogConsole:     mycfg.LogConsole,
+	// 	LogLevel:       mycfg.LogLevel,
+	// }
 
-	myinfo := jarviscore.BaseInfo{
-		Name:     mycfg.NodeName,
-		BindAddr: mycfg.BindAddr,
-		ServAddr: mycfg.ServAddr,
+	bi := &jarviscore.BaseInfo{
+		Name:     cfg.BaseNodeInfo.NodeName,
+		BindAddr: cfg.BaseNodeInfo.BindAddr,
+		ServAddr: cfg.BaseNodeInfo.ServAddr,
 		NodeType: pb.NODETYPE_SH,
 	}
 
-	jarviscore.InitJarvisCore(cfg)
+	jarviscore.InitJarvisCore(*cfg)
 	defer jarviscore.ReleaseJarvisCore()
 
-	node := jarviscore.NewNode(myinfo)
+	node := jarviscore.NewNode(*bi)
 	// defer node.Stop()
 
 	node.Start(context.Background())
