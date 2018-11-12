@@ -89,8 +89,8 @@
     "crypto",
     "proto"
   ]
-  revision = "e9ed54da09e3a97524a607e6d242bfbecd123f50"
-  version = "v0.3.1"
+  revision = "2818eb32e0f49c48493305c534d331af63cf8556"
+  version = "v0.5.0"
 
 [[projects]]
   name = "go.uber.org/atomic"
@@ -135,13 +135,13 @@
     "internal/timeseries",
     "trace"
   ]
-  revision = "a544f70c90f196e50d198126db0c4cb2b562fec0"
+  revision = "03003ca0c849e57b6ea29a4bab8d3cb6e4d568fe"
 
 [[projects]]
   branch = "master"
   name = "golang.org/x/sys"
   packages = ["unix"]
-  revision = "3a76605856fddce5718553cbb8bd50ca492a7274"
+  revision = "66b7b1311ac80bbafcd2daeef9a5e6e2cd1e2399"
 
 [[projects]]
   name = "golang.org/x/text"
@@ -168,7 +168,7 @@
   branch = "master"
   name = "google.golang.org/genproto"
   packages = ["googleapis/rpc/status"]
-  revision = "c830210a61dfaa790e1920f8d0470fc27bc2efbe"
+  revision = "b5d43981345bdb2c233eb4bf3277847b48c6fdc6"
 
 [[projects]]
   name = "google.golang.org/grpc"
@@ -212,6 +212,6 @@
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "38551aaafefc9c646840e221ad387d272fea569f9bb2e1cbbd827ccd90c5c54c"
+  inputs-digest = "1343c76a032196de2cf4abd7f3e9b3bde26614cee6b4e15032fca54575901c67"
   solver-name = "gps-cdcl"
   solver-version = 1
