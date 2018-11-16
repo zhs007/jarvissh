@@ -9,6 +9,7 @@ docker run -d \
     jarvissh
 
 docker container cp jarvissh_buildrelease:/home/jarvissh $PWD/release/jarvissh
+rm -rf $PWD/release/jarvissh/dat/coredb
 tar zcvf $PWD/release/jarvissh.tar.gz $PWD/release/jarvissh
 
 docker container stop jarvissh_buildrelease
