@@ -27,17 +27,17 @@ func main() {
 	// 	LogLevel:       mycfg.LogLevel,
 	// }
 
-	bi := &jarviscore.BaseInfo{
-		Name:     cfg.BaseNodeInfo.NodeName,
-		BindAddr: cfg.BaseNodeInfo.BindAddr,
-		ServAddr: cfg.BaseNodeInfo.ServAddr,
-		// NodeType: pb.NODETYPE_SH,
-	}
+	// bi := &jarviscore.BaseInfo{
+	// 	Name:     cfg.BaseNodeInfo.NodeName,
+	// 	BindAddr: cfg.BaseNodeInfo.BindAddr,
+	// 	ServAddr: cfg.BaseNodeInfo.ServAddr,
+	// 	// NodeType: pb.NODETYPE_SH,
+	// }
 
-	jarviscore.InitJarvisCore(*cfg)
+	jarviscore.InitJarvisCore(cfg)
 	defer jarviscore.ReleaseJarvisCore()
 
-	node := jarviscore.NewNode(*bi)
+	node := jarviscore.NewNode(cfg)
 	// defer node.Stop()
 
 	node.Start(context.Background())
