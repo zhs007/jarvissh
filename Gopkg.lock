@@ -89,8 +89,8 @@
     "crypto",
     "proto"
   ]
-  revision = "a57d60c3b9c68f424336a190717dc80b27a2fd03"
-  version = "v0.6.9"
+  revision = "3a87db81506ad99479dadcc8a78e7de22e645f47"
+  version = "v0.6.10"
 
 [[projects]]
   name = "go.uber.org/atomic"
@@ -141,7 +141,7 @@
   branch = "master"
   name = "golang.org/x/sys"
   packages = ["unix"]
-  revision = "ec83556a53fe16b65c452a104ea9d1e86a671852"
+  revision = "0cf1ed9e522b7dbb416f080a5c8003de9b702bf4"
 
 [[projects]]
   name = "golang.org/x/text"
@@ -212,6 +212,6 @@
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "8cec54dbc022e0a9510118b918ac2af9f352762f2289ddc439d3c8217710d08a"
+  inputs-digest = "ddd55365de25e8346e44729e5f2d60ae060be9588e99dda0c64932ac9ed63a59"
   solver-name = "gps-cdcl"
   solver-version = 1
