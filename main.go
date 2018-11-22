@@ -2,17 +2,21 @@ package main
 
 import (
 	"context"
-	"fmt"
+
+	"go.uber.org/zap"
 
 	"github.com/zhs007/jarviscore"
+	"github.com/zhs007/jarviscore/base"
 )
 
 func main() {
-	fmt.Print("jarvis shell start...")
+	jarvisbase.Info("jarvis shell start...")
+	jarvisbase.Info("jarvis shell version is 0.1.3")
 
 	cfg, err := jarviscore.LoadConfig("cfg/config.yaml")
 	if err != nil {
-		fmt.Print("load config.yaml fail!")
+		jarvisbase.Warn("load config.yaml fail!", zap.Error(err))
+		// fmt.Print("load config.yaml fail!")
 
 		return
 	}
@@ -42,5 +46,5 @@ func main() {
 
 	node.Start(context.Background())
 
-	fmt.Print("jarvis shell end.")
+	jarvisbase.Info("jarvis shell end.")
 }
