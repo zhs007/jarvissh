@@ -5,11 +5,12 @@ import (
 	"fmt"
 
 	"github.com/zhs007/jarviscore"
+	"github.com/zhs007/jarvissh/basedef"
 )
 
 func main() {
 	fmt.Print("jarvis shell start...")
-	fmt.Print("jarvis shell version is 0.1.3")
+	fmt.Print("jarvis shell version is " + basedef.VERSION)
 
 	cfg, err := jarviscore.LoadConfig("cfg/config.yaml")
 	if err != nil {
@@ -40,6 +41,7 @@ func main() {
 	defer jarviscore.ReleaseJarvisCore()
 
 	node := jarviscore.NewNode(cfg)
+	node.SetNodeTypeInfo(basedef.JARVISNODETYPE, basedef.VERSION)
 	// defer node.Stop()
 
 	node.Start(context.Background())
