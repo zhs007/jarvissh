@@ -89,8 +89,8 @@
     "crypto",
     "proto"
   ]
-  revision = "3c4a9f2a9eacbbc9790b6f55898dacb1638b6558"
-  version = "v0.6.13"
+  revision = "f77d73ed829e364017e0c4dc7f15196af4b141c5"
+  version = "v0.6.15"
 
 [[projects]]
   name = "go.uber.org/atomic"
@@ -212,6 +212,6 @@
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "4326404b477f66a2a37d7f71e68c560134d7ff565e4a460a4bb12e85cd304ae5"
+  inputs-digest = "159c8dd7caf56f5a2ab14c0c0ce5b4db989ecc602f074905143bedecf883a7da"
   solver-name = "gps-cdcl"
   solver-version = 1
