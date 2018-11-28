@@ -66,7 +66,7 @@
     "leveldb/table",
     "leveldb/util"
   ]
-  revision = "f9080354173f192dfc8821931eacf9cfd6819253"
+  revision = "353a9fca669c44dedb58d5a074f6d052fb0f58e0"
 
 [[projects]]
   name = "github.com/zhs007/ankadb"
@@ -89,8 +89,8 @@
     "crypto",
     "proto"
   ]
-  revision = "69f0851ffcf6e44a6a5a52d88868163cc758c63b"
-  version = "v0.6.12"
+  revision = "3c4a9f2a9eacbbc9790b6f55898dacb1638b6558"
+  version = "v0.6.13"
 
 [[projects]]
   name = "go.uber.org/atomic"
@@ -121,7 +121,7 @@
   branch = "master"
   name = "golang.org/x/crypto"
   packages = ["ripemd160"]
-  revision = "3d3f9f413869b949e48070b5bc593aa22cc2b8f2"
+  revision = "eb0de9b17e854e9b1ccd9963efafc79862359959"
 
 [[projects]]
   branch = "master"
@@ -168,7 +168,7 @@
   branch = "master"
   name = "google.golang.org/genproto"
   packages = ["googleapis/rpc/status"]
-  revision = "b5d43981345bdb2c233eb4bf3277847b48c6fdc6"
+  revision = "31ac5d88444a9e7ad18077db9a165d793ad06a2e"
 
 [[projects]]
   name = "google.golang.org/grpc"
@@ -212,6 +212,6 @@
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "318330070a84fc43a5bb1a14daa4b510c8a5acbe25ae2ad02b4e22bd22c1c443"
+  inputs-digest = "4326404b477f66a2a37d7f71e68c560134d7ff565e4a460a4bb12e85cd304ae5"
   solver-name = "gps-cdcl"
   solver-version = 1
