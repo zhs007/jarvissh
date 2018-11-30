@@ -66,7 +66,7 @@
     "leveldb/table",
     "leveldb/util"
   ]
-  revision = "353a9fca669c44dedb58d5a074f6d052fb0f58e0"
+  revision = "b001fa50d6b27f3f0bb175a87d0cb55426d0a0ae"
 
 [[projects]]
   name = "github.com/zhs007/ankadb"
@@ -89,8 +89,8 @@
     "crypto",
     "proto"
   ]
-  revision = "f77d73ed829e364017e0c4dc7f15196af4b141c5"
-  version = "v0.6.15"
+  revision = "45023ba10312edbc63c15fe351831bc371ad08e0"
+  version = "v0.6.18"
 
 [[projects]]
   name = "go.uber.org/atomic"
@@ -135,13 +135,13 @@
     "internal/timeseries",
     "trace"
   ]
-  revision = "adae6a3d119ae4890b46832a2e88a95adc62b8e7"
+  revision = "fae4c4e3ad76c295c3d6d259f898136b4bf833a8"
 
 [[projects]]
   branch = "master"
   name = "golang.org/x/sys"
   packages = ["unix"]
-  revision = "62eef0e2fa9b2c385f7b2778e763486da6880d37"
+  revision = "4ed8d59d0b35e1e29334a206d1b3f38b1e5dfb31"
 
 [[projects]]
   name = "golang.org/x/text"
@@ -206,12 +206,12 @@
 [[projects]]
   name = "gopkg.in/yaml.v2"
   packages = ["."]
-  revision = "5420a8b6744d3b0345ab293f6fcba19c978f1183"
-  version = "v2.2.1"
+  revision = "51d6538a90f86fe93ac480b35f37b2be17fef232"
+  version = "v2.2.2"
 
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "159c8dd7caf56f5a2ab14c0c0ce5b4db989ecc602f074905143bedecf883a7da"
+  inputs-digest = "c40bedcfed0488f40c9f46e60cf517b7a93923066000e8c2c5a0a9d625f3e38f"
   solver-name = "gps-cdcl"
   solver-version = 1
