@@ -46,8 +46,8 @@
     "language/typeInfo",
     "language/visitor"
   ]
-  revision = "5c1be0872a56fba73b279434ea95dfda735abedd"
-  version = "v0.7.6"
+  revision = "08943645bf265d192b32f2100cdff2428f7ae7c5"
+  version = "v0.7.7"
 
 [[projects]]
   branch = "master"
@@ -76,8 +76,8 @@
     "graphqlext",
     "proto"
   ]
-  revision = "ef6651b14ec19cf5ffe33ecc445bf468d56a16fe"
-  version = "v0.2.7"
+  revision = "eff880a4a3071447e6f9c7cc366f3a39ebc79719"
+  version = "v0.2.9"
 
 [[projects]]
   name = "github.com/zhs007/jarviscore"
@@ -89,8 +89,8 @@
     "crypto",
     "proto"
   ]
-  revision = "b7896a8e80567d62acd2f8d19d1c4184d0856692"
-  version = "v0.6.19"
+  revision = "2bc9c9683d2297f57fa674a393d4a1a868c2d4f4"
+  version = "v0.6.21"
 
 [[projects]]
   name = "go.uber.org/atomic"
@@ -121,7 +121,7 @@
   branch = "master"
   name = "golang.org/x/crypto"
   packages = ["ripemd160"]
-  revision = "eb0de9b17e854e9b1ccd9963efafc79862359959"
+  revision = "505ab145d0a99da450461ae2c1a9f6cd10d1f447"
 
 [[projects]]
   branch = "master"
@@ -135,13 +135,13 @@
     "internal/timeseries",
     "trace"
   ]
-  revision = "351d144fa1fc0bd934e2408202be0c29f25e35a0"
+  revision = "891ebc4b82d6e74f468c533b06f983c7be918a96"
 
 [[projects]]
   branch = "master"
   name = "golang.org/x/sys"
   packages = ["unix"]
-  revision = "4ed8d59d0b35e1e29334a206d1b3f38b1e5dfb31"
+  revision = "4d1cda033e0619309c606fc686de3adcf599539e"
 
 [[projects]]
   name = "golang.org/x/text"
@@ -168,7 +168,7 @@
   branch = "master"
   name = "google.golang.org/genproto"
   packages = ["googleapis/rpc/status"]
-  revision = "31ac5d88444a9e7ad18077db9a165d793ad06a2e"
+  revision = "bd91e49a0898e27abb88c339b432fa53d7497ac0"
 
 [[projects]]
   name = "google.golang.org/grpc"
@@ -177,17 +177,22 @@
     "balancer",
     "balancer/base",
     "balancer/roundrobin",
+    "binarylog/grpc_binarylog_v1",
     "codes",
     "connectivity",
     "credentials",
+    "credentials/internal",
     "encoding",
     "encoding/proto",
     "grpclog",
     "internal",
     "internal/backoff",
+    "internal/binarylog",
     "internal/channelz",
     "internal/envconfig",
     "internal/grpcrand",
+    "internal/grpcsync",
+    "internal/syscall",
     "internal/transport",
     "keepalive",
     "metadata",
@@ -200,8 +205,8 @@
     "status",
     "tap"
   ]
-  revision = "2e463a05d100327ca47ac218281906921038fd95"
-  version = "v1.16.0"
+  revision = "df014850f6dee74ba2fc94874043a9f3f75fbfd8"
+  version = "v1.17.0"
 
 [[projects]]
   name = "gopkg.in/yaml.v2"
@@ -212,6 +217,6 @@
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "06cc9ef057ffaba1a6a83c7aafe8de632e8e968f0396fd2a660a73421d9cbc71"
+  inputs-digest = "b1ed4644acd0ab9e894feb4f0fed7f15277511bed4df9cd417b537dfc7c5b85d"
   solver-name = "gps-cdcl"
   solver-version = 1
