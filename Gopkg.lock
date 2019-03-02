@@ -44,10 +44,28 @@
   version = "v0.7.7"
 
 [[projects]]
+  name = "github.com/inconshreveable/mousetrap"
+  packages = ["."]
+  revision = "76626ae9c91c4f2a10f34cad8ce83ea42c93bb75"
+  version = "v1.0"
+
+[[projects]]
   name = "github.com/mitchellh/mapstructure"
   packages = ["."]
   revision = "3536a929edddb9a5b34bd6861dc4a9647cb459fe"
   version = "v1.1.2"
+
+[[projects]]
+  name = "github.com/spf13/cobra"
+  packages = ["."]
+  revision = "ef82de70bb3f60c65fb8eebacbb2d122ef517385"
+  version = "v0.0.3"
+
+[[projects]]
+  name = "github.com/spf13/pflag"
+  packages = ["."]
+  revision = "298182f68c66c05229eb03ac171abe6e309ee79a"
+  version = "v1.0.3"
 
 [[projects]]
   branch = "master"
@@ -90,7 +108,7 @@
     "crypto",
     "proto"
   ]
-  revision = "90111c11cec5da3d370a91e50383ef8a5057127a"
+  revision = "11464d19e54c146fc91f9c0456b39c622c465d11"
 
 [[projects]]
   name = "go.uber.org/atomic"
@@ -135,7 +153,7 @@
     "internal/timeseries",
     "trace"
   ]
-  revision = "92fc7df08ae7536330f5a21328292abfa70520a8"
+  revision = "16b79f2e4e95ea23b2bf9903c9809ff7b013ce85"
 
 [[projects]]
   branch = "master"
@@ -217,6 +235,6 @@
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "4a9e7a951aa6ce28c290480186ac02791c2b262ae07915b39756c57e014ec6c4"
+  inputs-digest = "86ba7efea2d8911b8ee51e091e54c4a43c43d3cd24fca11d968b49013277267d"
   solver-name = "gps-cdcl"
   solver-version = 1
