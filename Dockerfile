@@ -24,4 +24,4 @@ RUN CGO_ENABLED=0 GOOS=linux go build -a -installsuffix cgo -o jarvissh . \
 FROM alpine
 WORKDIR /home/jarvissh
 COPY --from=builder /home/jarvissh /home/jarvissh
-CMD ["./jarvissh"]
+CMD ["./jarvissh", "start"]
