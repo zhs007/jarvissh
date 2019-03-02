@@ -8,12 +8,6 @@
   revision = "00116ff8c62fc6d4daa24156ce0ad03ce49ae845"
 
 [[projects]]
-  branch = "master"
-  name = "github.com/goinggo/mapstructure"
-  packages = ["."]
-  revision = "194205d9b4a98eff86d4e8d3c0dfe87dea59ef81"
-
-[[projects]]
   name = "github.com/golang/protobuf"
   packages = [
     "proto",
@@ -22,14 +16,14 @@
     "ptypes/duration",
     "ptypes/timestamp"
   ]
-  revision = "aa810b61a9c79d51363740d207bb46cf8e620ed5"
-  version = "v1.2.0"
+  revision = "c823c79ea1570fb5ff454033735a8e68575d1d0f"
+  version = "v1.3.0"
 
 [[projects]]
-  branch = "master"
   name = "github.com/golang/snappy"
   packages = ["."]
-  revision = "2e65f85255dbc3072edf28d6b5b8efc472979f5a"
+  revision = "2a8bb927dd31d8daada140a5d09578521ce5c36a"
+  version = "v0.0.1"
 
 [[projects]]
   name = "github.com/graphql-go/graphql"
@@ -50,6 +44,30 @@
   version = "v0.7.7"
 
 [[projects]]
+  name = "github.com/inconshreveable/mousetrap"
+  packages = ["."]
+  revision = "76626ae9c91c4f2a10f34cad8ce83ea42c93bb75"
+  version = "v1.0"
+
+[[projects]]
+  name = "github.com/mitchellh/mapstructure"
+  packages = ["."]
+  revision = "3536a929edddb9a5b34bd6861dc4a9647cb459fe"
+  version = "v1.1.2"
+
+[[projects]]
+  name = "github.com/spf13/cobra"
+  packages = ["."]
+  revision = "ef82de70bb3f60c65fb8eebacbb2d122ef517385"
+  version = "v0.0.3"
+
+[[projects]]
+  name = "github.com/spf13/pflag"
+  packages = ["."]
+  revision = "298182f68c66c05229eb03ac171abe6e309ee79a"
+  version = "v1.0.3"
+
+[[projects]]
   branch = "master"
   name = "github.com/syndtr/goleveldb"
   packages = [
@@ -66,9 +84,10 @@
     "leveldb/table",
     "leveldb/util"
   ]
-  revision = "b001fa50d6b27f3f0bb175a87d0cb55426d0a0ae"
+  revision = "4217c9f31f5816db02addc94e56061da77f288d8"
 
 [[projects]]
+  branch = "v0.3"
   name = "github.com/zhs007/ankadb"
   packages = [
     ".",
@@ -76,10 +95,10 @@
     "graphqlext",
     "proto"
   ]
-  revision = "eff880a4a3071447e6f9c7cc366f3a39ebc79719"
-  version = "v0.2.9"
+  revision = "22b9fe97cdd7a80a183d867aefd6158a4b4d4b9b"
 
 [[projects]]
+  branch = "v0.7"
   name = "github.com/zhs007/jarviscore"
   packages = [
     ".",
@@ -89,8 +108,7 @@
     "crypto",
     "proto"
   ]
-  revision = "dae7862d1275b7440ae9cd9d9d9bb4e6ac039557"
-  version = "v0.6.22"
+  revision = "11464d19e54c146fc91f9c0456b39c622c465d11"
 
 [[projects]]
   name = "go.uber.org/atomic"
@@ -121,7 +139,7 @@
   branch = "master"
   name = "golang.org/x/crypto"
   packages = ["ripemd160"]
-  revision = "505ab145d0a99da450461ae2c1a9f6cd10d1f447"
+  revision = "8dd112bcdc25174059e45e07517d9fc663123347"
 
 [[projects]]
   branch = "master"
@@ -135,13 +153,13 @@
     "internal/timeseries",
     "trace"
   ]
-  revision = "891ebc4b82d6e74f468c533b06f983c7be918a96"
+  revision = "16b79f2e4e95ea23b2bf9903c9809ff7b013ce85"
 
 [[projects]]
   branch = "master"
   name = "golang.org/x/sys"
   packages = ["unix"]
-  revision = "4d1cda033e0619309c606fc686de3adcf599539e"
+  revision = "a34e9553db1e492c9a76e60db2296ae7e5fbb772"
 
 [[projects]]
   name = "golang.org/x/text"
@@ -168,7 +186,7 @@
   branch = "master"
   name = "google.golang.org/genproto"
   packages = ["googleapis/rpc/status"]
-  revision = "bd91e49a0898e27abb88c339b432fa53d7497ac0"
+  revision = "4f5b463f9597cbe0dd13a6a2cd4f85e788d27508"
 
 [[projects]]
   name = "google.golang.org/grpc"
@@ -205,8 +223,8 @@
     "status",
     "tap"
   ]
-  revision = "df014850f6dee74ba2fc94874043a9f3f75fbfd8"
-  version = "v1.17.0"
+  revision = "2fdaae294f38ed9a121193c51ec99fecd3b13eb7"
+  version = "v1.19.0"
 
 [[projects]]
   name = "gopkg.in/yaml.v2"
@@ -217,6 +235,6 @@
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "ed18d985dae0a8f686037da13559318e733535f1cac6e146625edf5bd0752219"
+  inputs-digest = "86ba7efea2d8911b8ee51e091e54c4a43c43d3cd24fca11d968b49013277267d"
   solver-name = "gps-cdcl"
   solver-version = 1
