@@ -108,7 +108,7 @@
     "crypto",
     "proto"
   ]
-  revision = "11464d19e54c146fc91f9c0456b39c622c465d11"
+  revision = "aa078c7b232c4c4e8d74d05c0b6d309b0ad8046d"
 
 [[projects]]
   name = "go.uber.org/atomic"
@@ -159,7 +159,7 @@
   branch = "master"
   name = "golang.org/x/sys"
   packages = ["unix"]
-  revision = "a34e9553db1e492c9a76e60db2296ae7e5fbb772"
+  revision = "b6889370fb1098ed892bd3400d189bb6a3355813"
 
 [[projects]]
   name = "golang.org/x/text"
