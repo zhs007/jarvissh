@@ -5,6 +5,7 @@ import (
 	"io/ioutil"
 	"os"
 	"os/exec"
+	"time"
 
 	"github.com/spf13/cobra"
 	"github.com/zhs007/jarvissh/basedef"
@@ -67,6 +68,9 @@ func startCmd() error {
 
 			command := exec.Command("kill", string(strb))
 			command.Start()
+
+			time.Sleep(time.Duration(30) * time.Second)
+
 			fmt.Printf("jarvissh stop.\n")
 		},
 	}
