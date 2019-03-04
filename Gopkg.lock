@@ -103,12 +103,13 @@
   packages = [
     ".",
     "base",
+    "basedef",
     "coredb",
     "coredb/proto",
     "crypto",
     "proto"
   ]
-  revision = "7d08c6742f51138d4ae5133a65716fff066baed8"
+  revision = "1ac1af8bb57c0f4296e4601db6adda454269bf3e"
 
 [[projects]]
   name = "go.uber.org/atomic"
@@ -159,7 +160,7 @@
   branch = "master"
   name = "golang.org/x/sys"
   packages = ["unix"]
-  revision = "b6889370fb1098ed892bd3400d189bb6a3355813"
+  revision = "c2f5717e611cf8e89a852a41081355194d80c943"
 
 [[projects]]
   name = "golang.org/x/text"
