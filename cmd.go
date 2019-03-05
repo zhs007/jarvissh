@@ -8,6 +8,7 @@ import (
 	"time"
 
 	"github.com/spf13/cobra"
+	corebasedef "github.com/zhs007/jarviscore/basedef"
 	"github.com/zhs007/jarvissh/basedef"
 )
 
@@ -121,6 +122,7 @@ func addVersion(rootCmd *cobra.Command) {
 		Short: "get jarvis shell version",
 		Run: func(cmd *cobra.Command, args []string) {
 			fmt.Printf("jarvis shell version is %v \n", basedef.VERSION)
+			fmt.Printf("jarvis core version is %v \n", corebasedef.VERSION)
 		},
 	}
 

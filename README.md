@@ -24,3 +24,9 @@ However, using with ``Docker``, you will not provision service resources through
 ```
 ./jarvissh stop
 ```
+
+### Restart Jarvissh Deamon
+
+```
+./jarvissh restart -d
+```
