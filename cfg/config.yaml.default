@@ -42,5 +42,4 @@ updatescript: |
   wget https://github.com/zhs007/jarvissh/releases/download/{{.NewVersion}}/jarvissh.tar.gz
   tar zxvf jarvissh.tar.gz
   cd jarvissh
-  ./jarvissh stop
-  ./jarvissh start -d
+  ./jarvissh restart -d
