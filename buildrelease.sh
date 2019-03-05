@@ -11,6 +11,7 @@ docker run -d \
 rm -rf $PWD/release/jarvissh
 docker container cp jarvissh_buildrelease:/home/jarvissh $PWD/release/jarvissh
 rm -rf $PWD/release/jarvissh/dat/coredb
+rm -rf $PWD/release/jarvissh/jarvissh.pid
 mv $PWD/release/jarvissh/cfg/config.yaml $PWD/release/jarvissh/cfg/config.yaml.default
 cd release
 tar zcvf jarvissh.tar.gz jarvissh
