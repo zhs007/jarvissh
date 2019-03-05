@@ -26,6 +26,8 @@ func addStart(rootCmd *cobra.Command) {
 					fmt.Printf("start jarvissh error. %v \n", err)
 
 					os.Exit(-1)
+
+					return
 				}
 
 				// fmt.Printf("jarvissh start, [PID] %d running...\n", command.Process.Pid)
@@ -34,9 +36,11 @@ func addStart(rootCmd *cobra.Command) {
 				daemon = false
 
 				os.Exit(0)
-			} else {
-				fmt.Printf("jarvissh start.\n")
+
+				return
 			}
+
+			fmt.Printf("jarvissh start.\n")
 
 			fmt.Printf("jarvissh start, [PID] %d running...\n", os.Getpid())
 			ioutil.WriteFile("jarvissh.pid", []byte(fmt.Sprintf("%d", os.Getpid())), 0666)
@@ -60,6 +64,8 @@ func addStop(rootCmd *cobra.Command) {
 				fmt.Printf("read jarvissh.pid error %v\n", err)
 
 				os.Exit(-1)
+
+				return
 			}
 
 			command := exec.Command("kill", string(strb))
@@ -98,6 +104,8 @@ func addRestart(rootCmd *cobra.Command) {
 					fmt.Printf("start jarvissh error. %v \n", err)
 
 					os.Exit(-1)
+
+					return
 				}
 
 				// fmt.Printf("jarvissh start, [PID] %d running...\n", command.Process.Pid)
@@ -106,9 +114,11 @@ func addRestart(rootCmd *cobra.Command) {
 				daemon = false
 
 				os.Exit(0)
-			} else {
-				fmt.Printf("jarvissh start.\n")
+
+				return
 			}
+
+			fmt.Printf("jarvissh start.\n")
 
 			fmt.Printf("jarvissh start, [PID] %d running...\n", os.Getpid())
 			ioutil.WriteFile("jarvissh.pid", []byte(fmt.Sprintf("%d", os.Getpid())), 0666)
