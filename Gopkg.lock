@@ -84,7 +84,7 @@
     "leveldb/table",
     "leveldb/util"
   ]
-  revision = "4217c9f31f5816db02addc94e56061da77f288d8"
+  revision = "3a907f965fc16db5f7787e18d4434bbe46d47f6e"
 
 [[projects]]
   branch = "v0.3"
@@ -109,7 +109,7 @@
     "crypto",
     "proto"
   ]
-  revision = "1ac1af8bb57c0f4296e4601db6adda454269bf3e"
+  revision = "a3cdb9870aaa109c16d7a91d57dba8481a8f96ae"
 
 [[projects]]
   name = "go.uber.org/atomic"
@@ -160,7 +160,7 @@
   branch = "master"
   name = "golang.org/x/sys"
   packages = ["unix"]
-  revision = "c2f5717e611cf8e89a852a41081355194d80c943"
+  revision = "e844e0132e93db857c984c24fd4fc86815e43be3"
 
 [[projects]]
   name = "golang.org/x/text"
