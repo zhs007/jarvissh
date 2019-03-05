@@ -38,8 +38,8 @@ func addStart(rootCmd *cobra.Command) {
 				fmt.Printf("jarvissh start.\n")
 			}
 
-			fmt.Printf("jarvissh start, [PID] %d running...\n", os.Getegid())
-			ioutil.WriteFile("jarvissh.pid", []byte(fmt.Sprintf("%d", os.Getegid())), 0666)
+			fmt.Printf("jarvissh start, [PID] %d running...\n", os.Getpid())
+			ioutil.WriteFile("jarvissh.pid", []byte(fmt.Sprintf("%d", os.Getpid())), 0666)
 
 			startServ()
 		},
@@ -110,8 +110,8 @@ func addRestart(rootCmd *cobra.Command) {
 				fmt.Printf("jarvissh start.\n")
 			}
 
-			fmt.Printf("jarvissh start, [PID] %d running...\n", os.Getegid())
-			ioutil.WriteFile("jarvissh.pid", []byte(fmt.Sprintf("%d", os.Getegid())), 0666)
+			fmt.Printf("jarvissh start, [PID] %d running...\n", os.Getpid())
+			ioutil.WriteFile("jarvissh.pid", []byte(fmt.Sprintf("%d", os.Getpid())), 0666)
 
 			startServ()
 		},
