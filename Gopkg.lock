@@ -109,7 +109,7 @@
     "crypto",
     "proto"
   ]
-  revision = "54246d67557a5c1c7bda07f36a3343d4ae068bf3"
+  revision = "05caea66e7bc2cecf270cfa98c760ed3f7651c8f"
 
 [[projects]]
   name = "go.uber.org/atomic"
@@ -187,7 +187,7 @@
   branch = "master"
   name = "google.golang.org/genproto"
   packages = ["googleapis/rpc/status"]
-  revision = "4f5b463f9597cbe0dd13a6a2cd4f85e788d27508"
+  revision = "c21a8b77f9f040598af1c8c5c0870568f1959df3"
 
 [[projects]]
   name = "google.golang.org/grpc"
@@ -236,6 +236,6 @@
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "86ba7efea2d8911b8ee51e091e54c4a43c43d3cd24fca11d968b49013277267d"
+  inputs-digest = "c5fd58209de34e63adbde20b2fb4d0bb7a7b5c80e4cc19e7fdeac557ee1a83a3"
   solver-name = "gps-cdcl"
   solver-version = 1
