@@ -16,8 +16,8 @@
     "ptypes/duration",
     "ptypes/timestamp"
   ]
-  revision = "c823c79ea1570fb5ff454033735a8e68575d1d0f"
-  version = "v1.3.0"
+  revision = "b5d812f8a3706043e23a9cd5babf2e5423744d30"
+  version = "v1.3.1"
 
 [[projects]]
   name = "github.com/golang/snappy"
@@ -84,7 +84,7 @@
     "leveldb/table",
     "leveldb/util"
   ]
-  revision = "3a907f965fc16db5f7787e18d4434bbe46d47f6e"
+  revision = "7bd84fdc8ccda40c12af62ed4f0a94a0dd04a362"
 
 [[projects]]
   branch = "v0.3"
@@ -109,7 +109,7 @@
     "crypto",
     "proto"
   ]
-  revision = "b8abd9b7fc3db40a45aa988721ae8518453e59b7"
+  revision = "8211e741c9de0e9218fc660fa66e1a47b173d0a4"
 
 [[projects]]
   name = "go.uber.org/atomic"
@@ -140,7 +140,7 @@
   branch = "master"
   name = "golang.org/x/crypto"
   packages = ["ripemd160"]
-  revision = "c2843e01d9a2bc60bb26ad24e09734fdc2d9ec58"
+  revision = "a1f597ede03a7bef967a422b5b3a5bd08805a01e"
 
 [[projects]]
   branch = "master"
@@ -154,13 +154,13 @@
     "internal/timeseries",
     "trace"
   ]
-  revision = "d8887717615a059821345a5c23649351b52a1c0b"
+  revision = "9f648a60d9775ef5c977e7669d1673a7a67bef33"
 
 [[projects]]
   branch = "master"
   name = "golang.org/x/sys"
   packages = ["unix"]
-  revision = "fead79001313d15903fb4605b4a1b781532cd93e"
+  revision = "a2f829d7f35f2ed1c3520c553a6226495455cae0"
 
 [[projects]]
   name = "golang.org/x/text"
