@@ -84,7 +84,7 @@
     "leveldb/table",
     "leveldb/util"
   ]
-  revision = "7bd84fdc8ccda40c12af62ed4f0a94a0dd04a362"
+  revision = "c3a204f8e96543bb0cc090385c001078f184fc46"
 
 [[projects]]
   branch = "v0.3"
@@ -109,7 +109,7 @@
     "crypto",
     "proto"
   ]
-  revision = "e6eba4f344941c14ea705a0ea6f17005a97f63fd"
+  revision = "9a6f17a23be4897a04bcf3739bc2a0e520c3fdfe"
 
 [[projects]]
   name = "go.uber.org/atomic"
