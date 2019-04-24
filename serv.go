@@ -22,6 +22,9 @@ func startServ() {
 	jarviscore.InitJarvisCore(cfg)
 	defer jarviscore.ReleaseJarvisCore()
 
+	// pprof
+	jarviscore.InitPprof(cfg)
+
 	node, err := jarviscore.NewNode(cfg)
 	if err != nil {
 		fmt.Printf("jarviscore.NewNode fail! %v \n", err)
