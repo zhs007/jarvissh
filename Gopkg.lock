@@ -109,7 +109,7 @@
     "crypto",
     "proto"
   ]
-  revision = "d7ac4daed389e544bc4a97a83b607725366d3294"
+  revision = "877b0d431c3ead6625658ec5372efab7426d7ebb"
 
 [[projects]]
   name = "go.uber.org/atomic"
@@ -140,7 +140,7 @@
   branch = "master"
   name = "golang.org/x/crypto"
   packages = ["ripemd160"]
-  revision = "d864b10871cd4370fe574816b489c819c675ccc7"
+  revision = "c05e17bb3b2dca130fc919668a96b4bec9eb9442"
 
 [[projects]]
   branch = "master"
@@ -160,7 +160,7 @@
   branch = "master"
   name = "golang.org/x/sys"
   packages = ["unix"]
-  revision = "953cdadca894cdc07be76fc99f95b40c28f06623"
+  revision = "18eb32c0e2f0c2bc8d17842ed4ad41486f349ad4"
 
 [[projects]]
   name = "golang.org/x/text"
@@ -169,6 +169,8 @@
     "collate/build",
     "internal/colltab",
     "internal/gen",
+    "internal/language",
+    "internal/language/compact",
     "internal/tag",
     "internal/triegen",
     "internal/ucd",
@@ -180,8 +182,8 @@
     "unicode/norm",
     "unicode/rangetable"
   ]
-  revision = "f21a4dfb5e38f5895301dc265a8def02365cc3d0"
-  version = "v0.3.0"
+  revision = "c942b20a5d85b458c4dce1589326051d85e25d6d"
+  version = "v0.3.1"
 
 [[projects]]
   branch = "master"
