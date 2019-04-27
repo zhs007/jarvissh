@@ -1,27 +1,26 @@
 
-FROM golang:1.10 as builder
+FROM golang:1.12 as builder
 
 MAINTAINER zerro "zerrozhao@gmail.com"
 
-WORKDIR $GOPATH/src/github.com/zhs007/jarvissh
+WORKDIR /src/jarvissh
 
-COPY ./Gopkg.* $GOPATH/src/github.com/zhs007/jarvissh/
+COPY ./go.* /src/jarvissh/
 
-RUN go get -u github.com/golang/dep/cmd/dep \
-    && dep ensure -vendor-only -v
+RUN go mod download
 
-COPY . $GOPATH/src/github.com/zhs007/jarvissh
+COPY . /src/jarvissh
 
 RUN CGO_ENABLED=0 GOOS=linux go build -a -installsuffix cgo -o jarvissh . \
-    && mkdir /home/jarvissh \
-    && mkdir /home/jarvissh/dat \
-    && mkdir /home/jarvissh/logs \
-    && mkdir /home/jarvissh/cfg \
-    && cp -r www /home/jarvissh/www \
-    && cp jarvissh /home/jarvissh \
-    && cp cfg/config.yaml.default /home/jarvissh/cfg/config.yaml
+    && mkdir /app/jarvissh \
+    && mkdir /app/jarvissh/dat \
+    && mkdir /app/jarvissh/logs \
+    && mkdir /app/jarvissh/cfg \
+    && cp -r www /app/jarvissh/www \
+    && cp jarvissh /app/jarvissh \
+    && cp cfg/config.yaml.default /app/jarvissh/cfg/config.yaml
 
 FROM alpine
-WORKDIR /home/jarvissh
-COPY --from=builder /home/jarvissh /home/jarvissh
+WORKDIR /app/jarvissh
+COPY --from=builder /app/jarvissh /app/jarvissh
 CMD ["./jarvissh", "start"]
