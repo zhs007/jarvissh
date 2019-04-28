@@ -12,6 +12,7 @@ RUN go mod download
 COPY . /src/jarvissh
 
 RUN CGO_ENABLED=0 GOOS=linux go build -a -installsuffix cgo -o jarvissh . \
+    && mkdir /app \
     && mkdir /app/jarvissh \
     && mkdir /app/jarvissh/dat \
     && mkdir /app/jarvissh/logs \
