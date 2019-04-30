@@ -8,7 +8,6 @@ lsttrustnode: ['1JJaKpZGhYPuVHc1EKiiHZEswPAB5SybW5']
 # pprof - pprof
 pprof:
   baseurl: ':6061'
-  goroutineurl: ':6060'
 
 # ankadb - ankadb config
 ankadb:
