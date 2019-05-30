@@ -19,7 +19,7 @@ func startServ() {
 		return
 	}
 
-	jarviscore.InitJarvisCore(cfg)
+	jarviscore.InitJarvisCore(cfg, basedef.JARVISNODETYPE, basedef.VERSION)
 	defer jarviscore.ReleaseJarvisCore()
 
 	// pprof

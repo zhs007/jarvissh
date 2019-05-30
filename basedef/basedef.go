@@ -4,4 +4,4 @@ package basedef
 const JARVISNODETYPE = "jarvisshell"
 
 // VERSION - version
-const VERSION = "0.2.80"
+const VERSION = "0.2.81"
