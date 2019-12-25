@@ -1,7 +1,9 @@
 
-FROM golang:1.12 as builder
+FROM golang:1 as builder
 
 MAINTAINER zerro "zerrozhao@gmail.com"
+
+ENV GOPROXY https://goproxy.io
 
 WORKDIR /src/jarvissh
 

@@ -3,6 +3,13 @@
 
 jarvis shell node
 
+### Install
+
+```
+wget https://github.com/zhs007/jarvissh/releases/download/v0.2.91/jarvissh.tar.gz
+tar zxvf jarvissh.tar.gz
+```
+
 ### Run Jarvissh With Docker
 
 ```

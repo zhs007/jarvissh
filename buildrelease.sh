@@ -1,21 +1,13 @@
-if [ ! -d "release" ]; then
-    mkdir release
-fi
+rm -rf release
+mkdir release
 
-docker container stop jarvissh_buildrelease
-docker container rm jarvissh_buildrelease
-docker run -d \
-    --name jarvissh_buildrelease \
-    jarvissh
+docker build -f ./Dockerfile.build -t jarvisshbuild .
+docker run -d --name jarvisshbuild jarvisshbuild sh -c "while true; do sleep 1; done"
+docker cp jarvisshbuild:/app/jarvissh.linux64 ./release/
+docker cp jarvisshbuild:/app/jarvissh.win64 ./release/
+docker stop jarvisshbuild
+docker rm jarvisshbuild
 
-rm -rf $PWD/release/jarvissh
-docker container cp jarvissh_buildrelease:/app/jarvissh $PWD/release/jarvissh
-rm -rf $PWD/release/jarvissh/dat/coredb
-rm -rf $PWD/release/jarvissh/jarvissh.pid
-mv $PWD/release/jarvissh/cfg/config.yaml $PWD/release/jarvissh/cfg/config.yaml.default
-cp $PWD/version.md $PWD/release/jarvissh/
 cd release
-tar zcvf jarvissh.tar.gz jarvissh
-
-docker container stop jarvissh_buildrelease
-docker container rm jarvissh_buildrelease
+tar zcvf jarvissh.linux64.tar.gz jarvissh.linux64
+tar zcvf jarvissh.win64.tar.gz jarvissh.win64

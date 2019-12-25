@@ -1,6 +1,8 @@
-FROM golang:1.12
+FROM golang:1
 
 MAINTAINER zerro "zerrozhao@gmail.com"
+
+ENV GOPROXY https://goproxy.io
 
 WORKDIR /src/jarvissh
 

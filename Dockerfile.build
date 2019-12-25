@@ -1,0 +1,35 @@
+
+FROM golang:1
+
+MAINTAINER zerro "zerrozhao@gmail.com"
+
+ENV GOPROXY https://goproxy.io
+
+WORKDIR /src/jarvissh
+
+COPY ./go.* /src/jarvissh/
+
+RUN go mod download
+
+COPY . /src/jarvissh
+
+RUN CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -a -installsuffix cgo -o jarvissh . \
+    && mkdir /app \
+    && mkdir /app/jarvissh.linux64 \
+    && mkdir /app/jarvissh.linux64/dat \
+    && mkdir /app/jarvissh.linux64/logs \
+    && mkdir /app/jarvissh.linux64/cfg \
+    && cp -r www /app/jarvissh.linux64/www \
+    && cp ./jarvissh /app/jarvissh.linux64/ \
+    && cp ./VERSION /app/jarvissh.linux64/ \
+    && cp cfg/config.yaml.default /app/jarvissh.linux64/cfg/config.yaml
+
+RUN CGO_ENABLED=0 GOOS=windows GOARCH=amd64 go build -a -installsuffix cgo -o jarvissh . \
+    && mkdir /app/jarvissh.win64 \
+    && mkdir /app/jarvissh.win64/dat \
+    && mkdir /app/jarvissh.win64/logs \
+    && mkdir /app/jarvissh.win64/cfg \
+    && cp -r www /app/jarvissh.win64/www \
+    && cp ./jarvissh /app/jarvissh.win64/ \
+    && cp ./VERSION /app/jarvissh.win64/ \
+    && cp cfg/config.yaml.default /app/jarvissh.win64/cfg/config.yaml
